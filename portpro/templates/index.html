@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
     <script defer src="{{ url_for('static', filename='js/scripts.js') }}"></script>
 </head>
@@ -24,7 +25,7 @@
     <div class="main-content">
         <header class="header">
             <div class="container">
-                <h1>Your Name</h1>
+                <h1>KARTHIK K V</h1>
                 <p>Full-Stack Web Developer</p>
             </div>
         </header>
@@ -32,27 +33,97 @@
         <section id="about" class="about">
             <div class="container">
                 <h2>About Me</h2>
-                <p>Introduce yourself here. Highlight your experience, skills, and interests.</p>
+                <p>Hello! 👋 I'm <strong>Karthik KV</strong>, a <span class="highlight">Full-Stack Web Developer</span> who enjoys crafting thoughtful and impactful web solutions.</p>
+        
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>What I Do</h3>
+                        <p>
+                            My expertise spans both <strong>front-end</strong> and <strong>back-end</strong> technologies, enabling me to create applications that are not only visually engaging but also robust and efficient.
+                        </p>
+                        <ul>
+                            <li>Design intuitive and responsive user interfaces.</li>
+                            <li>Build reliable, scalable backend systems.</li>
+                            <li>Focus on clean, maintainable, and efficient code.</li>
+                        </ul>
+                    </div>
+                </div>
+                <p>
+                    I’m motivated by the opportunity to solve problems and bring ideas to life through technology. With a commitment to <span class="highlight">continuous improvement</span>, I stay up-to-date with the latest trends in web development to deliver modern and scalable solutions that align with user needs.
+                </p>
+                <p>
+                    I’m excited to <strong>collaborate, innovate, and contribute</strong> to meaningful projects that make a difference.
+                </p>
             </div>
         </section>
-
+        
         <section id="skills" class="skills">
             <div class="container">
                 <h2>Skills</h2>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Python</li>
-                    <li>Django</li>
-                    <li>React</li>
-                </ul>
+                <p>Here are some of my technical skills.</p>
+                <div class="skills-wrapper">
+                    <div class="skill">
+                        <div class="skill-icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <h3>HTML</h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%;">80%</div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-icon">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <h3>CSS</h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%;">80%</div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-icon">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <h3>JavaScript</h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 45%;">45%</div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <h3>Python</h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%;">85%</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
+        </section>        
 
         <section id="projects" class="projects">
             <div class="container">
                 <h2>Projects</h2>
                 <p>Highlight your projects here.</p>
+                <div class="project-cards">
+                    <div class="project-card" onclick="toggleDetails(this)">
+                        <img src="path/to/project1-image.jpg" alt="Project 1 Image">
+                        <h3>Project 1</h3>
+                        <p>Short description...</p>
+                        <div class="project-details">
+                            <p>Detailed description about Project 1. This includes features, technologies used, and links.</p>
+                        </div>
+                    </div>
+                    <div class="project-card" onclick="toggleDetails(this)">
+                        <img src="path/to/project2-image.jpg" alt="Project 2 Image">
+                        <h3>Project 2</h3>
+                        <p>Short description...</p>
+                        <div class="project-details">
+                            <p>Detailed description about Project 2. This includes features, technologies used, and links.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
