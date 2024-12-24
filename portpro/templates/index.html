@@ -29,11 +29,13 @@
                 <p>Full-Stack Web Developer</p>
             </div>
         </header>
-
+        <div class="profile-container">
+            <img src="{{ url_for('static', filename='images/82.jpg.webp') }}" alt="Profile Image" class="profile-image">
+        </div>
         <section id="about" class="about">
             <div class="container">
                 <h2>About Me</h2>
-                <p>Hello! 👋 I'm <strong>Karthik KV</strong>, a <span class="highlight">Full-Stack Web Developer</span> who enjoys crafting thoughtful and impactful web solutions.</p>
+                <p>Hello! I'm <strong>Karthik KV</strong>, a <span class="highlight">Full-Stack Web Developer</span> who enjoys crafting thoughtful and impactful web solutions.</p>
         
                 <div class="about-content">
                     <div class="about-text">
@@ -41,7 +43,7 @@
                         <p>
                             My expertise spans both <strong>front-end</strong> and <strong>back-end</strong> technologies, enabling me to create applications that are not only visually engaging but also robust and efficient.
                         </p>
-                        <ul>
+                        <ul class="nig">
                             <li>Design intuitive and responsive user interfaces.</li>
                             <li>Build reliable, scalable backend systems.</li>
                             <li>Focus on clean, maintainable, and efficient code.</li>
@@ -113,6 +115,8 @@
                         <p>Short description...</p>
                         <div class="project-details">
                             <p>Detailed description about Project 1. This includes features, technologies used, and links.</p>
+                            <a href="https://yourprojectdemo.com" target="_blank" class="btn">View Demo</a>
+                            <a href="https://github.com/yourrepo" target="_blank" class="btn">View Code</a>
                         </div>
                     </div>
                     <div class="project-card" onclick="toggleDetails(this)">
@@ -121,6 +125,8 @@
                         <p>Short description...</p>
                         <div class="project-details">
                             <p>Detailed description about Project 2. This includes features, technologies used, and links.</p>
+                            <a href="https://yourprojectdemo.com" target="_blank" class="btn">View Demo</a>
+                            <a href="https://github.com/yourrepo" target="_blank" class="btn">View Code</a>
                         </div>
                     </div>
                 </div>
@@ -131,19 +137,30 @@
             <div class="container">
                 <h2>Contact Me</h2>
                 <form>
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Your Message" required></textarea>
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    
+                    <label for="message">Your Message</label>
+                    <textarea id="message" placeholder="Your Message" required></textarea>
+                    
                     <button type="submit">Send</button>
                 </form>
             </div>
         </section>
+        
 
         <footer class="footer">
             <div class="container">
-                <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+                <p>&copy; 2024 Karthik KV. All Rights Reserved.</p>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                </div>
             </div>
-        </footer>
+        </footer>        
     </div>
 </body>
 </html>
