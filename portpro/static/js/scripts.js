@@ -10,3 +10,6 @@ function closeNav() {
 function toggleDetails(card) {
     card.classList.toggle("open");
 }
+function toggleDetails(card) {
+    card.classList.toggle('active');
+}
