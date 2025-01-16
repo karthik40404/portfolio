@@ -185,6 +185,7 @@ section {
 }
 
 .education h2, .internship h2 {
+    text-align: center;
     font-size: 2rem;
     margin-bottom: 20px;
     color: #333;
@@ -401,7 +402,36 @@ footer {
 .pn{
     font-weight: 600;
 }
+.project-cards {
+    display: flex;
+    justify-content: space-between; /* Space between the cards */
+    gap: 20px; /* Adjust spacing between project cards */
+    margin-top: 20px;
+}
 
+.project-card {
+    flex: 1; /* Ensures equal width */
+    max-width: calc(33.333% - 20px); /* Adjust width to fit 3 cards with gap */
+    background: #fff; /* Optional: Add a background color */
+    border: 1px solid #ddd; /* Optional: Add a border */
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+    padding: 15px; /* Optional: Padding inside the card */
+    text-align: center;
+}
+.resume h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.resume p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
 /* Responsive Design */
 @media (max-width: 768px) {
     .contact {
@@ -454,5 +484,20 @@ footer {
     .project-card {
         width: 100%;
     }
+    .project-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive layout */
+        gap: 20px;
+    }
+    
+    .project-card {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+        text-align: center;
+    }
+    
 
 }

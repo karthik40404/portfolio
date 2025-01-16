@@ -13,6 +13,7 @@
     <div id="sideNav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="#about">About</a>
+        <a href="#resume">Resume</a>
         <a href="#internship">Internship</a>
         <a href="#education">Education</a>
         <a href="#skills">Skills</a>
@@ -60,7 +61,13 @@
                 </p>
             </div>
         </section>
-        
+        <section id="resume" class="resume">
+            <div class="container">
+                <h2>Resume</h2>
+                <p>Preview my resume below or download it directly.</p>
+                <iframe src="../static/images/Professional CV Resume.pdf" width="100%" height="600px" style="border: none;"></iframe>
+            </div>
+        </section>        
         <section id="internship" class="internship">
             <div class="container">
                 <h2>Internship</h2>
@@ -153,23 +160,36 @@
                 <p>Highlights of my projects.</p>
                 <div class="project-cards">
                     <div class="project-card" onclick="toggleDetails(this)">
-                        <img src="path/to/project1-image.jpg" alt="Project 1 Image">
-                        <h3>Project 1</h3>
-                        <p>Short description...</p>
+                        <img src="../static/images/vlst1.png" alt="Project 1 Image">
+                        <h3>VL Store</h3>
+                        <p><b>Online Provision Store</b></p>
                         <div class="project-details">
-                            <p>Detailed description about Project 1. This includes features, technologies used, and links.</p>
-                            <a href="https://yourprojectdemo.com" target="_blank" class="btn">View Demo</a>
-                            <a href="https://github.com/yourrepo" target="_blank" class="btn">View Code</a>
+                            <p>Developed VL Stores, an e-commerce platform for online provision shopping, allowing the shop owner (admin) to manage inventory and users to browse and purchase essentials conveniently.</p>
+                            <p> Technologies Used:Django (Backend), HTML, CSS, JavaScript (Frontend) .</p>
+                            <a href="https://karthikkv.pythonanywhere.com/" target="_blank" class="btn">View Demo</a>
+                            <a href="https://github.com/karthik40404/vlstores.git" target="_blank" class="btn">View Code</a>
                         </div>
                     </div>
                     <div class="project-card" onclick="toggleDetails(this)">
-                        <img src="path/to/project2-image.jpg" alt="Project 2 Image">
-                        <h3>Project 2</h3>
-                        <p>Short description...</p>
+                        <img src="../static/images/dete.png" alt="Project 2 Image">
+                        <h3>Inquestor</h3>
+                        <p><b>Online Private Investigation</b></p>
                         <div class="project-details">
-                            <p>Detailed description about Project 2. This includes features, technologies used, and links.</p>
+                            <p>Developed Inquestor, is a streamlined platform for online case registration, enabling users to manage cases easily while admins oversee agents and adding case category, ensuring efficiency and security in private investigations.</p>
+                            <P>Technologies Used:Django (Backend), HTML, CSS, JavaScript (Frontend) .</p>
                             <a href="https://yourprojectdemo.com" target="_blank" class="btn">View Demo</a>
-                            <a href="https://github.com/yourrepo" target="_blank" class="btn">View Code</a>
+                            <a href="https://github.com/karthik40404/inquestor.git" target="_blank" class="btn">View Code</a>
+                        </div>
+                    </div>
+                    <div class="project-card" onclick="toggleDetails(this)">
+                        <img src="../static/images/odin1.png" alt="Project 3 Image">
+                        <h3>Odin Project</h3>
+                        <p><b>Clone Website</b></p>
+                        <div class="project-details">
+                            <p>Developed a responsive clone of the Odin Project website, accurately replicating its layout and  providing a visually appealing interface.</p>
+                            <p>Technologies Used: HTML, CSS, Bootstrap.</p>
+                            <a href="https://yourprojectdemo.com" target="_blank" class="btn">View Demo</a>
+                            <a href="https://github.com/karthik40404/Odin.git" target="_blank" class="btn">View Code</a>
                         </div>
                     </div>
                 </div>
