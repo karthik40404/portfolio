@@ -486,10 +486,12 @@ footer {
     }
     .project-cards {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive layout */
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); 
         gap: 20px;
     }
-    
+    .project-details{
+        width:100%;
+    }
     .project-card {
         background: #fff;
         border: 1px solid #ddd;
@@ -499,5 +501,32 @@ footer {
         text-align: center;
     }
     
-
+    
+        .project-cards {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .project-card {
+            max-width: 90%;
+        }
+    
+        .projects h2 {
+            font-size: 1.75rem;
+        }
+    
+        .projects p {
+            font-size: 0.9rem;
+        }
+        .resume h2 {
+            font-size: 1.75rem;
+        }
+    
+        .resume p {
+            font-size: 0.9rem;
+        }
+    
+        .resume iframe {
+            height: 400px; 
+        }
 }
