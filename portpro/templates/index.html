@@ -12,6 +12,7 @@
     <!-- Off-Canvas Sidebar -->
     <div id="sideNav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Top</a>
         <a href="#about">About</a>
         <a href="#resume">Resume</a>
         <a href="#internship">Internship</a>
@@ -25,16 +26,16 @@
     <span class="openbtn" onclick="openNav()">&#9776;</span>
 
     <!-- Main Content -->
-    <div class="main-content">
+    <div class="main-content" id="top" class="top">
         <header class="header">
             <div class="container">
                 <h1>KARTHIK K V</h1>
+            </div>
+            <div class="profile-container">
+                <img src="{{ url_for('static', filename='images/portimg1.jpg') }}" alt="Profile Image" class="profile-image">
                 <p>Full-Stack Web Developer</p>
             </div>
         </header>
-        <div class="profile-container">
-            <img src="{{ url_for('static', filename='images/portimg1.jpg') }}" alt="Profile Image" class="profile-image">
-        </div>
         <section id="about" class="about">
             <div class="container">
                 <h2>About Me</h2>
@@ -53,14 +54,32 @@
                         </ul>
                     </div>
                 </div>
+        
                 <p>
                     I’m motivated by the opportunity to solve problems and bring ideas to life through technology. With a commitment to <span class="highlight">continuous improvement</span>, I stay up-to-date with the latest trends in web development to deliver modern and scalable solutions that align with user needs.
                 </p>
                 <p>
                     I’m excited to <strong>collaborate, innovate, and contribute</strong> to meaningful projects that make a difference.
                 </p>
+        
+                <!-- Social Links Section -->
+                <div class="social-links">
+                    <h3>Connect with Me</h3>
+                    <a href="https://linkedin.com/in/karthik-k-v-1ab738347" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/karthik40404" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://instagram.com/karthiiikk.___" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                </div>                
             </div>
-        </section>
+        </section>        
         <section id="resume" class="resume">
             <div class="container">
                 <h2>Resume</h2>
@@ -149,7 +168,16 @@
                         <div class="progress-bar">
                             <div class="progress" style="width: 85%;">85%</div>
                         </div>
-                    </div>                  
+                    </div> 
+                    <div class="skill">
+                        <div class="skill-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>SQLite3</h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%;">75%</div>
+                        </div>
+                    </div>                 
                 </div>
             </div>
         </section>        
@@ -177,7 +205,7 @@
                         <div class="project-details">
                             <p>Developed Inquestor, is a streamlined platform for online case registration, enabling users to manage cases easily while admins oversee agents and adding case category, ensuring efficiency and security in private investigations.</p>
                             <P>Technologies Used:Django (Backend), HTML, CSS, JavaScript (Frontend) .</p>
-                            <a href="https://yourprojectdemo.com" target="_blank" class="btn">View Demo</a>
+                            <a href="#" target="_blank" class="btn">View Demo</a>
                             <a href="https://github.com/karthik40404/inquestor.git" target="_blank" class="btn">View Code</a>
                         </div>
                     </div>
@@ -188,7 +216,7 @@
                         <div class="project-details">
                             <p>Developed a responsive clone of the Odin Project website, accurately replicating its layout and  providing a visually appealing interface.</p>
                             <p>Technologies Used: HTML, CSS, Bootstrap.</p>
-                            <a href="https://yourprojectdemo.com" target="_blank" class="btn">View Demo</a>
+                            <a href="#" target="_blank" class="btn">View Demo</a>
                             <a href="https://github.com/karthik40404/Odin.git" target="_blank" class="btn">View Code</a>
                         </div>
                     </div>
@@ -212,10 +240,10 @@
         <footer class="footer">
             <div class="container">
                 <p>&copy; 2025 Karthik KV. All Rights Reserved.</p>
-                <div class="social-links">
-                    <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                <div class="social-links-footer">
+                    <a href="https://linkedin.com/in/karthik-k-v-1ab738347" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
                     <a href="https://github.com/karthik40404" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                    <a href="https://instagram.com/your-profile" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    <a href="https://instagram.com/karthiiikk.___" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </footer>        
